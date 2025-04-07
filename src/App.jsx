@@ -1,21 +1,39 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
+import Shop from './pages/Shop'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+import Livingroom_product from './pages/Livingroom'
+
 import Navbar from './components/Navbar/Navbar'
-import Home from './components/Home/Home'
 import Footer from './components/Footer/Footer'
-import OurProducts from './components/OurProducts/OurProducts'
+import CartSidebar from './pages/Cart'
+
 function App() {
+  const [isCartOpen, setIsCartOpen] = useState(false)
+
   return (
-    <>
-      <div className="w-full mx-auto lg:w-[70vw]">
-        <Navbar />
-        <Home />
-        <OurProducts />
-        <Footer />
+    <div className='w-full flex justify-center'>
+      <div className='w-full lg:w-[70vw] relative'>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<LandingPage />} />
+            <Route path='/shop' element={<Shop />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/signup' element={<Signup />} />
+            <Route path='/livingroom' element={<Livingroom_product />} />
+            <Route path='*' element={<h1>404 Not Found</h1>} />
+          </Routes>
+          <Footer />
+        </Router>
       </div>
-    </>
+    </div>
   )
 }
 

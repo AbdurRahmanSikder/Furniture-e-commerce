@@ -5,7 +5,7 @@ import living from "../../assets/Figma/living.png"
 import bedroom from "../../assets/Figma/Bedroom.png"
 const Home = () => {
     return (
-        <div className="px-2">
+        <div className="md:px-2">
             {/* Half-Screen Banner */}
             <div className="relative w-full h-[40vh] md:h-[60vh]  flex justify-center items-center">
                 <img src={banner} alt="Banner" className="w-full h-full object-cover" />

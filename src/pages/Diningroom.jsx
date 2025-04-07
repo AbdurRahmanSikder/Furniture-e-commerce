@@ -1,7 +1,7 @@
 import React from 'react'
-import Best_product from '../../assets/Figma/ourProduct/Ourproduct'
-import Items from '../Items/Items';
-const OurProducts = () => {
+import Diningroom_product from '../assets/Figma/Dining room/Dining'
+import Items from '../components/Items/Items';
+const Diningroom = () => {
     return (
         <>
             <div className="flex flex-col justify-center items-center">
@@ -9,7 +9,7 @@ const OurProducts = () => {
             </div>
             <div className='grid grid-cols-2 gap-2 px-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-4 '>
                 {
-                    Best_product.map((item, i) => {
+                    Diningroom_product.map((item, i) => {
                         return <Items key={i} image={item.image} description={item.description}
                             old_price={item.old_price} new_price={item.new_price} name={item.name}
                             discount={item.discount} />
@@ -23,4 +23,4 @@ const OurProducts = () => {
     )
 }
 
-export default OurProducts
+export default Diningroom
