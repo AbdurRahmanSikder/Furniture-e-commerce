@@ -7,13 +7,12 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { BsCart3 } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from 'react-router-dom';
-import CartSidebar from '../../pages/Cart';
+import CartPage from '../../pages/Cart';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [cartOpen, setCartOpen] = useState(false);
-  const [wishlistCount, setWishlistCount] = useState(0);
-  const [cartCount, setCartCount] = useState(2);
+  const [wishlistCount, setWishlistCount] = useState(1);
+  const [cartCount, setCartCount] = useState(1);
   const location = useLocation();
 
   return (
@@ -53,28 +52,28 @@ function Navbar() {
         <div className="flex gap-2 lg:gap-4 text-2xl">
           <Link to='/login'><div className="cursor-pointer hidden md:flex"><VscAccount /></div></Link>
           <div className="cursor-pointer"><LuSearch /></div>
-
-          <div className="relative cursor-pointer">
-            <MdFavoriteBorder />
-            {wishlistCount > 0 && (
-              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
-                {wishlistCount}
-              </span>
-            )}
-          </div>
-
+          <Link to="/wishlist">
+            <div className="relative cursor-pointer">
+              <MdFavoriteBorder />
+              {wishlistCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                  {wishlistCount}
+                </span>
+              )}
+            </div>
+          </Link>
           {/* Cart Icon triggers sidebar */}
           {/* Cart */}
-          <div className="relative cursor-pointer" onClick={() => setCartOpen(!cartOpen)}>
+          <Link to="/cart"><div className="relative cursor-pointer">
             <BsCart3 />
-            <CartSidebar isOpen={cartOpen} onClose={!cartOpen}/>
-            {cartOpen > 0 && (
+
+            {cartCount > 0 && (
               <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
                 {cartCount}
               </span>
             )}
           </div>
-
+          </Link>
         </div>
       </nav>
     </>

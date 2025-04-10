@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className="md:px-2">
             {/* Half-Screen Banner */}
-            <div className="relative w-full h-[40vh] md:h-[60vh]  flex justify-center items-center">
+            <div className="relative mx-auto w-full h-[40vh] md:h-[60vh]  flex justify-center items-center">
                 <img src={banner} alt="Banner" className="w-full h-full object-cover" />
 
                 {/* Responsive Overlay Box */}

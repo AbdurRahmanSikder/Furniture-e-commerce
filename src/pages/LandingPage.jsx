@@ -6,7 +6,7 @@ import OurProducts from '../components/OurProducts/OurProducts'
 const LandingPage = () => {
     return (
         <>
-            <div className="w-full mx-auto lg:w-[70vw]">
+            <div className="w-full ">
                 
                 <Home />
                 <OurProducts />

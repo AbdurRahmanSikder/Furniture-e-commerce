@@ -7,10 +7,11 @@ import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Livingroom_product from './pages/Livingroom'
-
+import CartPage from './pages/Cart'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-import CartSidebar from './pages/Cart'
+import WishlistPage from './pages/Wishlist'
+
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false)
@@ -27,6 +28,8 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />} />
+            <Route path='/cart' element={<CartPage />} />
+            <Route path='/wishlist' element={<WishlistPage />} />
             <Route path='/livingroom' element={<Livingroom_product />} />
             <Route path='*' element={<h1>404 Not Found</h1>} />
           </Routes>
