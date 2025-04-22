@@ -3,9 +3,10 @@ import banner from "../../assets/Figma/banner.jpeg";
 import Dining from "../../assets/Figma/Dining.png"
 import living from "../../assets/Figma/living.png"
 import bedroom from "../../assets/Figma/Bedroom.png"
+import { Link } from "react-router-dom";
 const Home = () => {
     return (
-        <div className="md:px-2">
+        <div className="md:px-2 pt-[60px]">
             {/* Half-Screen Banner */}
             <div className="relative mx-auto w-full h-[40vh] md:h-[60vh]  flex justify-center items-center">
                 <img src={banner} alt="Banner" className="w-full h-full object-cover" />
@@ -24,22 +25,28 @@ const Home = () => {
             </div>
             <div className=" flex flex-col justify-center items-center py-8">
                 <div className="text-4xl font-bold">Browse The Range</div>
-                <p className="mt-4 text-[#666666]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, rem.</p>
+                <p className="mt-4 text-[#666666] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, rem.</p>
             </div>
 
-            <div className=" flex gap-2 md:gap-10 items-center justify-center">
-                <div className="flex flex-col transition-transform duration-300 hover:scale-110">
-                    <img src={Dining} alt="" />
-                    <div className="mx-auto font-semibold my-2">Dinning</div>
-                </div>
-                <div className="flex flex-col transition-transform duration-300 hover:scale-110">
-                    <img src={living} alt="" />
-                    <div className="mx-auto font-semibold my-2">Living</div>
-                </div>
-                <div className="flex flex-col transition-transform duration-300 hover:scale-110">
-                    <img src={bedroom} alt="" />
-                    <div className="mx-auto font-semibold my-2">Bedroom</div>
-                </div>
+            <div className=" flex gap-2 md:gap-10 items-center justify-center px-2 md:px-0">
+                <Link to="/diningroom">
+                    <div className="flex flex-col transition-transform duration-300 hover:scale-110 hover:cursor-pointer">
+                        <img src={Dining} alt="" />
+                        <div className="mx-auto font-semibold my-2">Dinning</div>
+                    </div>
+                </Link>
+                <Link to="/livingroom">
+                    <div className="flex flex-col transition-transform duration-300 hover:scale-110 hover:cursor-pointer">
+                        <img src={living} alt="" />
+                        <div className="mx-auto font-semibold my-2">Living</div>
+                    </div>
+                </Link>
+                <Link to="/bedroom">
+                    <div className="flex flex-col transition-transform duration-300 hover:scale-110 hover:cursor-pointer">
+                        <img src={bedroom} alt="" />
+                        <div className="mx-auto font-semibold my-2">Bedroom</div>
+                    </div>
+                </Link>
             </div>
         </div>
     );

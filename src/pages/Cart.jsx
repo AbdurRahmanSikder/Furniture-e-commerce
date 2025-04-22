@@ -4,10 +4,11 @@ import shop_banner from "../assets/Figma/Rectangle.png";
 export default function CartPage() {
   return (
     <>
-      <div className="relative">
-        <img src={shop_banner} alt="Shop Banner" className="w-full object-cover" />
+      <div className='pt-[55px]'></div>
+      <div className="relative w-full h-[100px] md:h-[300px]">
+        <img src={shop_banner} alt="Shop Banner" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-6xl font-semibold">Cart</span>
+          <span className="text-3xl md:text-6xl font-semibold text-black">Cart</span>
         </div>
       </div>
       <div className=" bg-white flex flex-col md:flex-row gap-6">

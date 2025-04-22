@@ -6,7 +6,7 @@ export default function AuthPages() {
   const toggleForm = () => setIsLogin(!isLogin);
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center px-4">
+    <div className="relative min-h-screen flex items-center justify-center px-4 pt-[60px] ">
       {/* Blurry Background Image */}
       <div className="absolute inset-0 bg-cover bg-center filter blur-md opacity-70 z-0" style={{ backgroundImage: `url(${banner})` }}></div>
 

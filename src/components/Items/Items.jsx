@@ -14,13 +14,13 @@ const Items = ({ image, description, new_price, old_price, discount }) => {
       </div>
 
       {/* Details Section */}
-      <div className="p-5 ">
-        <h2 className="text-xl font-semibold text-gray-800">{description}</h2>
-        <p className="text-gray-500 text-sm">Stylish cafe chair</p>
+      <div className="py-5 pr-5 pl-2 ">
+        <h2 className="text-sm md:lg lg:xl font-semibold text-gray-800">{description}</h2>
+        <p className="text-sm text-gray-500 ">Stylish cafe chair</p>
         
         <div className="flex items-center space-x-2 mt-2">
-          <span className="text-lg font-bold text-gray-900">Tk {new_price}</span>
-          <span className="text-gray-400 line-through">Tk {old_price}</span>
+          <span className="text-sm md:lg lg:xl font-bold text-gray-900">Tk {new_price}</span>
+          <span className="text-sm md:lg lg:xl text-gray-400 line-through">Tk {old_price}</span>
         </div>
       </div>
     </div>

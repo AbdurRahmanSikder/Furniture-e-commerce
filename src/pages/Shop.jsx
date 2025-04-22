@@ -18,12 +18,14 @@ const Shop = () => {
   };
   return (
     <>
-      <div className="relative">
-        <img src={shop_banner} alt="Shop Banner" className="w-full object-cover" />
+      <div className='pt-[55px]'></div>
+      <div className="relative w-full h-[100px] md:h-[300px]">
+        <img src={shop_banner} alt="Shop Banner" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-6xl font-semibold">Shop</span>
+          <span className="text-3xl md:text-6xl font-semibold text-black">Shop</span>
         </div>
       </div>
+      <div className='pb-[5px] md:pb-[20px]'></div>
       <Filter />
       <div className='grid grid-cols-3 gap-2 px-4 lg:px-0 lg:grid-cols-3 xl:grid-cols-4 md:gap-4 '>
         {
@@ -40,8 +42,8 @@ const Shop = () => {
             key={page}
             onClick={() => handlePageClick(page)}
             className={`w-10 h-10 rounded-md text-center text-sm font-medium transition-colors ${currentPage === page
-                ? "bg-[#B88E2F] text-white"
-                : "bg-[#F9F1E7] text-black hover:bg-yellow-200"
+              ? "bg-[#B88E2F] text-white"
+              : "bg-[#F9F1E7] text-black hover:bg-yellow-200"
               }`}
           >
             {page}

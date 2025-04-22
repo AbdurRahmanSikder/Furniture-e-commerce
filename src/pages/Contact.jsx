@@ -4,15 +4,16 @@ import shop_banner from "../assets/Figma/Rectangle.png";
 const Contact = () => {
     return (
         <>
-            <div className="relative">
-                <img src={shop_banner} alt="Shop Banner" className="w-full object-cover" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-6xl font-semibold">Contact</span>
-                </div>
-            </div>
+            <div className='pt-[55px]'></div>
+                  <div className="relative w-full h-[100px] md:h-[300px]">
+                    <img src={shop_banner} alt="Shop Banner" className="absolute inset-0 w-full h-full object-cover" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-3xl md:text-6xl font-semibold text-black">Contact</span>
+                    </div>
+                  </div>
 
 
-            <div className="max-w-7xl mx-auto px-6 py-16">
+            <div className="max-w-7xl mx-auto p-2 md:px-6 md:py-10">
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h1 className="text-3xl font-bold mb-2">Get In Touch With Us</h1>

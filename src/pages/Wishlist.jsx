@@ -5,10 +5,11 @@ export default function WishlistPage() {
     return (
         <>
             {/* Banner */}
-            <div className="relative">
-                <img src={shop_banner} alt="Shop Banner" className="w-full object-cover" />
+            <div className='pt-[55px]'></div>
+            <div className="relative w-full h-[100px] md:h-[300px]">
+                <img src={shop_banner} alt="Shop Banner" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-6xl font-semibold">Wishlist</span>
+                    <span className="text-3xl md:text-6xl font-semibold text-black">Wishlist</span>
                 </div>
             </div>
 

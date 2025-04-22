@@ -1,12 +1,20 @@
 import React from 'react'
 import Livingroom_product from '../assets/Figma/Living room/Living'
 import Items from '../components/Items/Items';
+import shop_banner from "../assets/Figma/Rectangle.png";
+
 const Livingroom = () => {
     return (
         <>
-            <div className="flex flex-col justify-center items-center">
-                <div className="mb-16 mt-10 text-4xl font-bold">Our Products</div>
+            <div className='pt-[55px]'></div>
+            <div className="relative w-full h-[100px] md:h-[300px]">
+                <img src={shop_banner} alt="Shop Banner" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="text-3xl md:text-6xl font-semibold text-black">Livingroom</span>
+                </div>
             </div>
+            <div className='pb-[5px] md:pb-[20px]'></div>
+
             <div className='grid grid-cols-2 gap-2 px-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-4 '>
                 {
                     Livingroom_product.map((item, i) => {

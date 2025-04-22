@@ -17,7 +17,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed w-full lg:w-[70vw] mx-auto z-20 px-6 py-3 flex items-center justify-between bg-gray-100/70 backdrop-blur-md border-b border-gray-200/50">
+      <nav className="fixed  w-full lg:w-[70vw] mx-auto z-20 px-6 py-3 flex items-center justify-between bg-gray-100/70 backdrop-blur-md border-b border-gray-200/50">
         <div className="flex items-center gap-2 cursor-pointer">
           <div className="md:hidden cursor-pointer text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
@@ -27,11 +27,13 @@ function Navbar() {
             <div className="absolute z-10 top-14 left-0 w-full flex flex-col pl-8 gap-4 py-4 text-lg shadow-lg bg-gray-100/70 backdrop-blur-md border-b border-gray-200/50 md:hidden transition-transform duration-1000">
               <Link to="/" className={`cursor-pointer hover:text-blue-500 ${location.pathname === '/' ? 'text-blue-600 font-bold' : ''}`} onClick={() => setMenuOpen(false)}>Home</Link>
               <Link to="/shop" className={`cursor-pointer hover:text-blue-500 ${location.pathname === '/shop' ? 'text-blue-600 font-bold' : ''}`} onClick={() => setMenuOpen(false)}>Shop</Link>
-              <div className="cursor-pointer hover:text-blue-500">About</div>
-              <div className="cursor-pointer hover:text-blue-500">Contact</div>
+             
+              <Link to="/about" className={`cursor-pointer hover:text-blue-500 ${location.pathname === '/about' ? 'text-blue-600 font-bold' : ''}`} onClick={() => setMenuOpen(false)}>About</Link>
+              <Link to="/contact" className={`cursor-pointer hover:text-blue-500 ${location.pathname === '/contact' ? 'text-blue-600 font-bold' : ''}`} onClick={() => setMenuOpen(false)}>Contact</Link>
+             
               <div className="flex items-center gap-2 mt-1">
                 <div className="cursor-pointer text-2xl"><VscAccount /></div>
-                <div className="text-md">User name</div>
+                <div className="text-md">User profile</div>
               </div>
             </div>
           )}
