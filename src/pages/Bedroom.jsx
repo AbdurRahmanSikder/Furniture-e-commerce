@@ -17,7 +17,7 @@ const Bedroom = () => {
             <div className='grid grid-cols-2 gap-2 px-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-4 '>
                 {
                     Bedroom_product.map((item, i) => {
-                        return <Items key={i} image={item.image} description={item.description}
+                        return <Items id={item.id} key={i} image={item.image} description={item.description}
                             old_price={item.old_price} new_price={item.new_price} name={item.name}
                             discount={item.discount} />
                     })

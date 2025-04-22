@@ -13,6 +13,7 @@ import Footer from './components/Footer/Footer'
 import WishlistPage from './pages/Wishlist'
 import Diningroom from './pages/Diningroom'
 import Bedroom from './pages/Bedroom'
+import ProductDisplay from './pages/ProductDisplay'
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false)
@@ -25,6 +26,7 @@ function App() {
           <Routes>
             <Route path='/' element={<LandingPage />} />
             <Route path='/shop' element={<Shop />} />
+            <Route path='/shop/:productid' element={<ProductDisplay />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/login' element={<Login />} />

@@ -60,8 +60,8 @@ export default function CartPage() {
         </div>
 
         {/* Cart Totals */}
-        <div className="w-full md:w-1/3 lg:w-1/4 bg-amber-50 p-6 ">
-          <h2 className="text-lg font-bold mb-4">Cart Totals</h2>
+        <div className="w-full md:w-1/3 lg:w-1/4 bg-slate-200 p-6 ">
+          <h2 className="text-lg font-bold mb-4 text-center">Cart Totals</h2>
           <div className="flex justify-between text-xs md:text-sm mb-2">
             <span className="text-gray-700">Subtotal</span>
             <span className="text-gray-500">Tk 250,000</span>
@@ -70,7 +70,7 @@ export default function CartPage() {
             <span className="text-gray-700 font-semibold">Total</span>
             <span className="text-yellow-700 font-bold">Tk 250,000</span>
           </div>
-          <button className="w-full py-2 border border-gray-300 rounded-md hover:bg-gray-100 transition">
+          <button className="w-full py-2 border border-orange-500 rounded-md transition hover:bg-orange-500 hover:text-white">
             Check Out
           </button>
         </div>

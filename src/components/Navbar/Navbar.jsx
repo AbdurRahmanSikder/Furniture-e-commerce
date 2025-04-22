@@ -27,23 +27,23 @@ function Navbar() {
             <div className="absolute z-10 top-14 left-0 w-full flex flex-col pl-8 gap-4 py-4 text-lg shadow-lg bg-gray-100/70 backdrop-blur-md border-b border-gray-200/50 md:hidden transition-transform duration-1000">
               <Link to="/" className={`cursor-pointer hover:text-blue-500 ${location.pathname === '/' ? 'text-blue-600 font-bold' : ''}`} onClick={() => setMenuOpen(false)}>Home</Link>
               <Link to="/shop" className={`cursor-pointer hover:text-blue-500 ${location.pathname === '/shop' ? 'text-blue-600 font-bold' : ''}`} onClick={() => setMenuOpen(false)}>Shop</Link>
-             
+
               <Link to="/about" className={`cursor-pointer hover:text-blue-500 ${location.pathname === '/about' ? 'text-blue-600 font-bold' : ''}`} onClick={() => setMenuOpen(false)}>About</Link>
               <Link to="/contact" className={`cursor-pointer hover:text-blue-500 ${location.pathname === '/contact' ? 'text-blue-600 font-bold' : ''}`} onClick={() => setMenuOpen(false)}>Contact</Link>
-             
+
               <div className="flex items-center gap-2 mt-1">
                 <div className="cursor-pointer text-2xl"><VscAccount /></div>
                 <div className="text-md">User profile</div>
               </div>
             </div>
           )}
-
-          <div className="w-[50px] h-[32px]">
-            <img src={Logo} alt="Furniro Logo" />
-          </div>
-          <div className="text-3xl font-bold hidden md:flex">Furniture</div>
+            <div className="w-[50px] h-[32px]">
+              <img src={Logo} alt="Furniro Logo" />
+            </div>
+          <Link to='/'>
+            <div className="text-3xl font-bold hidden md:flex">Furniture</div>
+          </Link>
         </div>
-
         <div className="hidden md:flex gap-4 lg:gap-8">
           <Link to="/" className={`cursor-pointer hover:text-blue-500 ${location.pathname === '/' ? 'text-blue-600 font-bold' : ''}`}>Home</Link>
           <Link to="/shop" className={`cursor-pointer hover:text-blue-500 ${location.pathname === '/shop' ? 'text-blue-600 font-bold' : ''}`}>Shop</Link>
@@ -77,7 +77,7 @@ function Navbar() {
           </div>
           </Link>
         </div>
-      </nav>
+      </nav >
     </>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer className="py-8 px-2 md:px-0 border-t mt-10">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-4">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-4 ">
         {/* Company Info */}
         <div>
           <h2 className="font-bold text-lg">Furniture.</h2>
@@ -19,10 +20,10 @@ const Footer = () => {
           <div>
             <h3 className="text-[#9F9F9F]">Links</h3>
             <ul className="mt-4 space-y-3">
-              <li><a href="#" className="font-semibold text-gray-700 hover:underline">Home</a></li>
-              <li><a href="#" className="font-semibold text-gray-700 hover:underline">Shop</a></li>
-              <li><a href="#" className="font-semibold text-gray-700 hover:underline">About</a></li>
-              <li><a href="#" className="font-semibold text-gray-700 hover:underline">Contact</a></li>
+              <li><Link to="/" className="font-semibold text-gray-700 hover:underline">Home</Link></li>
+              <li><Link to="/shop" className="font-semibold text-gray-700 hover:underline">Shop</Link></li>
+              <li><Link to="/about" className="font-semibold text-gray-700 hover:underline">About</Link></li>
+              <li><Link to="/contact" className="font-semibold text-gray-700 hover:underline">Contact</Link></li>
             </ul>
           </div>
 

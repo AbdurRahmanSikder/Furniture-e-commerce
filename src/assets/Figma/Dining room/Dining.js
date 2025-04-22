@@ -8,7 +8,7 @@ import kitout from './KitOut.jpg';
 
 let Diningroom_product = [
     {
-        id: 1,
+        id: 7,
         name: "Camelia",
         description: "Elegant dining chair with a modern touch.",
         image: Camelia,
@@ -17,7 +17,7 @@ let Diningroom_product = [
         discount: Math.round(((1150000 - 650000) / 1150000) * 100), // 43%
     },
     {
-        id: 2,
+        id: 8,
         name: "Hatim",
         description: "Classic wooden chair for a vintage feel.",
         image: Hatim,
@@ -26,7 +26,7 @@ let Diningroom_product = [
         discount: Math.round(((720000 - 370000) / 720000) * 100), // 49%
     },
     {
-        id: 3,
+        id: 9,
         name: "HiTouch",
         description: "Premium leather dining chair for ultimate comfort.",
         image: HiTouch,
@@ -35,7 +35,7 @@ let Diningroom_product = [
         discount: Math.round(((890000 - 500000) / 890000) * 100), // 44%
     },
     {
-        id: 4,
+        id: 10,
         name: "REGAL",
         description: "Minimalist chair with a sophisticated look.",
         image: REGAL,
@@ -44,7 +44,7 @@ let Diningroom_product = [
         discount: Math.round(((960000 - 620000) / 960000) * 100), // 35%
     },
     {
-        id: 5,
+        id: 11,
         name: "ROSEMARY",
         description: "Handcrafted wooden chair with a rustic design.",
         image: ROSEMARY,
@@ -53,7 +53,7 @@ let Diningroom_product = [
         discount: Math.round(((850000 - 450000) / 850000) * 100), // 47%
     },
     {
-        id: 6,
+        id: 12,
         name: "Talsma",
         description: "Durable and stylish chair for everyday use.",
         image: Talsma,
@@ -62,7 +62,7 @@ let Diningroom_product = [
         discount: Math.round(((770000 - 490000) / 770000) * 100), // 36%
     },
     {
-        id: 7,
+        id: 13,
         name: "Kitout",
         description: "Compact and modern dining chair for small spaces.",
         image: kitout,

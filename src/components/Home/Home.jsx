@@ -19,7 +19,7 @@ const Home = () => {
                         <h1 className="text-2xl md:text-5xl  font-bold text-[#B88E2F]">Discover Our</h1>
                         <h1 className="text-2xl md:text-5xl md:mt-4 font-bold text-[#B88E2F]">New Collection</h1>
                         <p className="text-xs mt-5 md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, perspiciatis!</p>
-                        <button className="bg-[#B88E2F] px-4 py-1 mt-4 md:px-14 md:py-4 font-semibold text-white md:text-2xl md:mt-5 md:mb-4 hover:shadow-lg">BUY NOW</button>
+                        <Link to='/shop'><button className="bg-[#B88E2F] px-4 py-1 mt-4 md:px-14 md:py-4 font-semibold text-white md:text-2xl md:mt-5 md:mb-4">BUY NOW</button></Link>
                     </div>
                 </div>
             </div>

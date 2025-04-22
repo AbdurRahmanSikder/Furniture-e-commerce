@@ -8,7 +8,7 @@ import Velvet from './velvet.webp';
 
 let Livingroom_product = [
     {
-        id: 1,
+        id: 14,
         name: "Architect",
         description: "Modern and sleek sofa with a minimalist design.",
         image: Architect,
@@ -17,7 +17,7 @@ let Livingroom_product = [
         discount: Math.round(((1100000 - 600000) / 1100000) * 100), // 45%
     },
     {
-        id: 2,
+        id: 15,
         name: "BD Furniture",
         description: "Classic wooden sofa set with premium finish.",
         image: BDFurniture,
@@ -26,7 +26,7 @@ let Livingroom_product = [
         discount: Math.round(((700000 - 350000) / 700000) * 100), // 50%
     },
     {
-        id: 3,
+        id: 16,
         name: "Englander",
         description: "Elegant European-style sofa with soft upholstery.",
         image: Englander,
@@ -35,7 +35,7 @@ let Livingroom_product = [
         discount: Math.round(((900000 - 580000) / 900000) * 100), // 36%
     },
     {
-        id: 4,
+        id: 17,
         name: "Luxury",
         description: "Luxurious velvet sofa with gold-plated legs.",
         image: Luxury,
@@ -44,7 +44,7 @@ let Livingroom_product = [
         discount: Math.round(((1150000 - 720000) / 1150000) * 100), // 37%
     },
     {
-        id: 5,
+        id: 18,
         name: "Super Soft Sofa",
         description: "Ultra-soft, high-comfort sofa for a cozy living space.",
         image: SuperSoftSofa,
@@ -53,7 +53,7 @@ let Livingroom_product = [
         discount: Math.round(((880000 - 490000) / 880000) * 100), // 44%
     },
     {
-        id: 6,
+        id: 19,
         name: "Valyout",
         description: "Contemporary sofa with a stylish and durable build.",
         image: Valyout,
@@ -62,7 +62,7 @@ let Livingroom_product = [
         discount: Math.round(((820000 - 520000) / 820000) * 100), // 37%
     },
     {
-        id: 7,
+        id: 20,
         name: "Velvet",
         description: "Premium velvet-touch sofa for a luxurious feel.",
         image: Velvet,

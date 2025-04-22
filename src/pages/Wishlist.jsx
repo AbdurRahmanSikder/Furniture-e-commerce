@@ -39,7 +39,7 @@ export default function WishlistPage() {
                                 <td className="p-4 text-green-600 font-medium text-xs md:text-sm">In Stock</td>
                                 <td className="p-4 ">
                                     <div className="flex items-center justify-center">
-                                        <button className="text-xs md:text-sm px-3 py-1 border border-black rounded hover:bg-black hover:text-white transition">
+                                        <button className="text-xs md:text-sm px-3 py-1 border border-orange-500 rounded hover:bg-orange-600 hover:text-white transition">
                                             Add to Cart
                                         </button>
                                         <button className="ml-4">
